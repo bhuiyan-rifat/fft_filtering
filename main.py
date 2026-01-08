@@ -333,7 +333,7 @@ if __name__ == '__main__':
       z_scale = 1e-5
       fit_a_bounds = (0.0, 0.007)
 
-      output_path = os.path.join(base_path, "fft_data", material_name)
+      output_path = os.path.join(base_path, "filtered_data", material_name)
 
       # Create directory if it does not exist
       os.makedirs(output_path, exist_ok=True)
