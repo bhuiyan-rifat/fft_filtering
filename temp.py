@@ -36,7 +36,7 @@ def load_material_data(base_path: str, material_name: str, filename: str) -> pd.
     if not os.path.exists(file_path):
         raise FileNotFoundError(f"File not found at {file_path}")
 
-    df = pd.read_csv(file_path, header=None, usecols=[0, 1], names=['ca', 'oa'])
+    df = pd.read_csv(file_path, usecols=['ca', 'oa'])
     # df['T'] is defined as requested
     df['T'] = df['ca'] / df['oa']
     return df
