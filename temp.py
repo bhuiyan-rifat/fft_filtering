@@ -350,7 +350,7 @@ if __name__ == '__main__':
 
       # --- Loop over power values ---
       for power in power_values:
-          filename = f"{power}_ca_oa.csv"
+          filename = f"{power}.csv"
           print(f"\n⚙️ Processing power = {power} mW")
 
           try:
